@@ -1,3 +1,3 @@
-import math
-num=float(input("Digite um número"))
-print(f"O número digitado foi {num} , sua parte inteira é {math.trunc(num)}")
+from math import trunc
+num=float(input("Digite um número:"))
+print(f"A parte inteira de {num} é {trunc(num)}")
