@@ -9,6 +9,5 @@ for cont in range(0,5):
             maior=valores[cont]
         if valores[cont]<menor:
             menor=valores[cont]
-print("Os valores digitados foram:",end=" ")
-print(f"Você digitou os valores {valores}",end=" ")
-print(f"\nO maior valor foi {maior} e o menor foi {menor}")
+
+
