@@ -1,31 +1,30 @@
 principal=[]
-tempo=[]
+dados=[]
 cont=maior=menor=0
 while True:
-    print(f"{cont+1}° pessoa")
-    tempo.append(str(input("Digite seu nome:")))
-    tempo.append(float(input("Digite seu peso:")))
-    if cont==0:
-        maior=menor=tempo[1]
+    print(f"{cont+1} pessoa")
+    dados.append(str(input("Digite seu nome:")))
+    dados.append(int(input("Digite seu peso:")))
+    if len(principal)==0:
+        maior=menor=dados[1]
     else:
-        if tempo[1]>maior:
-            maior=tempo[1]
-        if tempo[1]<menor:
-            menor=tempo[1]
-    principal.append(tempo[:])
-    tempo.clear()
+        if dados[1]>maior:
+            maior=dados[1]
+        if dados[1]<menor:
+            menor=dados[1]
+    r=str(input("Quer continuar?"))
+    principal.append(dados[:])
+    dados.clear()
     cont+=1
-    r=str(input("Quer continuar? (S/N):"))
     if r in "Nn":
         break
-print(principal)
-print(f"Foram cadastradas {cont} pessoas:")
-print(f"O maior peso foi de {maior}kg")
+print(f"Foram cadastrados {len(principal)} pessoas")
+print(f"O maior peso foi de {maior}Kg",end=" ")
 for p in principal:
     if p[1]==maior:
-        print(f" {p[0]}")
-print(f"O menor peso foi de {menor}Kg")
+        print(f"Peso de [{p[0]}]",end=" ")
+print(f"O menor peso foi de {menor}Kg",end=" ")
 for p in principal:
     if p[1]==menor:
-        print(f"{p[0]}")
-print("Fim")
+        print(f"Peso de [{p[0]}]",end=" ")
+print("\nFim")
