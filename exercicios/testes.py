@@ -18,5 +18,12 @@ while True:
     if r in ["NAO","N","NÂO"]:
         break
 print(f"Foram cadastradas {len(principal)} pessoas")
-print(f"O maior peso foi de {maior} e o menor peso foi de {menor}")
 print(principal)
+print(f"A listagem de pessoas mais pesadas é ",end=" ")
+for p in principal:
+    if p[1] == maior:
+        print(f"[{p[0]}]",end=" ")
+print(f"\nA listagem de pessoas mais leves é ",end=" ")
+for p in principal:
+    if p[1] == menor:
+        print(f"[{p[0]}]",end=" ")
