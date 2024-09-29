@@ -1,3 +1,2 @@
-import random
-quan_jogos=int(input("Quantos jogos serão gerados? "))
-gerador=random.randint(1,60)
+from random import randint
+num=randint(1,60)
