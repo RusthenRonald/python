@@ -11,5 +11,5 @@ for c in range(0,quant_jogos):
     sorteio.append(computador)
 for s in sorteio:
     sleep(0.5)
-    print(f" Jogo {cont+1}° {s}")
+    print(f" Jogo {cont+1}° {sorted(s)}")
     cont+=1
