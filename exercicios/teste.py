@@ -15,4 +15,5 @@ print("-="*10)
 print(f"{"NOTA":<5}{"Nome":^7} {"Media":>5}")
 print("-="*10)
 for pos,a in enumerate(principal):
-    print(f"{}")
+    print(f"{pos:<5} {a[0]:^7} {a[3]:>5}")
+    
