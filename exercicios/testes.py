@@ -1,11 +1,11 @@
-listagem=( "Arroz", 5.99,
-    "Feijão", 7.49,
-    "Macarrão", 3.29,
-    "Leite", 4.69,
-    "Açúcar", 2.99,
-    "Café", 9.89)
-for item in range(0,len(listagem)):
-    if item%2==0:
-        print(f"{listagem[item]:.<30}",end="")
-    if item%2==1:
-        print(f"R${listagem[item]:>5}")
+dados={}
+dados["Nome"]=str(input("Digite seu nome:"))
+dados["Media"]=float(input(f"Média do aluno {dados['Nome']}"))
+if dados["Media"]>=7:
+    dados["Situação"]="Aprovado"
+elif dados["Media"]>=5 and dados["Situação"]<7:
+    dados["Situação"]="Recuperação"
+else:
+    dados["Situação"]="Reprovado otário!"
+for k , v in dados.items():
+    print(f"{k}:{v}")
