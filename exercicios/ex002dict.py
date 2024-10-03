@@ -14,4 +14,4 @@ for k,v in result.items():
 rank=sorted(result.items(),key=itemgetter(1),reverse="True")
 print("== RANKING DOS JOGADORES ==")
 for i,v in enumerate(rank):
-    print(f"{i}° lugar: {v[0]} com {v[1]} pontos")
+    print(f"{i+1}° lugar: {v[0]} com {v[1]} pontos")
