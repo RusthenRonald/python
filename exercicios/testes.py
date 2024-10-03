@@ -14,4 +14,4 @@ for k , v in dados.items():
 print("RAKING DOS JOGADORES")
 rank=sorted(dados.items(),key=itemgetter(1),reverse=True)
 for i,v in enumerate(rank):
-    print(f"{i}° lugar {v}")
+    print(f"{i+1}° lugar {v[0]} com {v[1]}")
