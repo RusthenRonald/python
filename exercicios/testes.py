@@ -2,9 +2,10 @@ dados={}
 dados["Nome"]=str(input("Nome:"))
 dados["Média"]=float(input("Mèdia:"))
 if dados["Média"]>=7 :
-    dados["Média"]="Aprovado"
+    dados["situacao"]="Aprovado"
 elif dados["Média"]>=5 and dados["Média"]<=7:
-    dados["Média"]="Recuperação"
+    dados["situacao"]="Recuperação"
 else:
     dados["situacao"]="Reprovado"
-print(dados)
+for k , v in dados.items():
+    print(f"{k} é igual a {v}")
