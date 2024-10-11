@@ -7,4 +7,11 @@ for c in range(0,tot):
 jogador["Gols"]=partidas[:]
 jogador["Total"]=sum(partidas)#soma elementos em lista ou tupla
 print(jogador)
-print(partidas)
+print("=-"*15)
+for k,v in jogador.items():
+    print(f"O campo {k} tem o valor {v}")
+print("=-"*15)
+print(f"O jogador {jogador['Nome']} jogou {len(partidas)} partidas")
+for i,v in enumerate(jogador["Gols"]):
+    print(f"Na partida {i} fez {v} gols")
+
