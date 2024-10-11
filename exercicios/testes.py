@@ -1,12 +1,29 @@
-from random import randint
-from operator import itemgetter
-resultados={}
-for c in range(0,4):
-    resultados[f"Jogador_{c+1}"]=randint(0,6)
-for k,v in resultados.items():
-    print(f"{k} tirou {v} no dado.")
-rank=[]
-print("RANKING DOS JOGADORES")
-rank=sorted(resultados.items(),key=itemgetter(1),reverse=True)
-for i,v in enumerate(rank):
-    print(f"{i+1}° lugar o {v[0]} com {v[1]}.")
+jogador={}
+jogador["Nome"]=str(input("Nome do jogador:"))
+partidas=int(input(f"Quantas partidas {jogador['Nome']} jogou "))
+c=total=0
+gols=[]
+while c != partidas:
+    jogador["Gols"]=int(input(f"Quantos gols na partida {c+1}?"))
+    total=total+jogador["Gols"]
+    gols.append(jogador["Gols"])
+    c+=1
+jogador["Total"]=total
+print("=-"*15)
+print(jogador)
+print("=-"*15)
+
+del(jogador["Gols"])
+
+for k,v in jogador.items():
+    print(f"O campo {k} tem o valor {v}")
+print(f"O campo gols tem o valor {gols}")
+print("=-"*15)
+
+print(f"O jogador {jogador['Nome']} jogou {partidas} partidas.")
+for c , v in enumerate(gols):
+    print(f"Na partida {c}, fez {v} gols")
+
+
+
+
