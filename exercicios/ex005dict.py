@@ -22,4 +22,8 @@ media=soma_idade/len(principal)
 print("Fim")
 print(f"Foram cadastradas {len(principal)} pessoas.")
 print(f"A média de idade é de {media} anos.")
+print("As mulheres cadastradas foram: ",end=" ")
+for p in principal:
+    if p["Sexo"] == "F":
+        print(f"{p['Nome']}",end=" ")
 
