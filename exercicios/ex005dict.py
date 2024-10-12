@@ -26,4 +26,9 @@ print("As mulheres cadastradas foram: ",end=" ")
 for p in principal:
     if p["Sexo"] == "F":
         print(f"{p['Nome']}",end=" ")
+print()
+print("Lista com pessoas acima da média:",end=" ")
+for p in principal:
+    if p["Idade"]>media:
+        print(f"{p["Nome"]}",end=" ")
 
