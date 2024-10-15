@@ -13,7 +13,7 @@ for l in range(0,3):
     soma_coluna+=matriz[l][2]
 for c in range(0,3):
     if c ==0:
-        matriz[1][c]=maior
+        maior=matriz[1][c]
     else:
         if matriz[1][c]>maior:
             maior=matriz[1][c]
