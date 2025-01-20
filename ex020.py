@@ -1,0 +1,5 @@
+nome=str(input("Digte seu nome completo:")).strip()  
+print(f"Seu nome em maiúsculas fica {nome.upper()}")
+print(f"Seu nome em minúsculas fica {nome.lower()}")
+print(f"Ao todo tem {len(nome)-nome.count(' ')} letras")
+print(f"O primeiro nome tem {nome.find(' ')} letras")
