@@ -15,5 +15,5 @@ elif idade>19 and idade<=25:
     print(f"O atleta tem {idade} anos")
     print("Classificação : Sênior")
 else:
-    print(f"O atleta tem {idade} anos")
+    print(f"O    atleta tem {idade} anos")
     print("Classificação : Master")
