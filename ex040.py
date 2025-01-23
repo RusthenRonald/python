@@ -35,3 +35,9 @@ if jogador == 1 and computador == 2:
 if jogador == 2 and computador == 2:
     print("EMPATE")
     print("Ambos escolheram TESOURA")
+if jogador == 2 and computador == 0:
+    print("DEORROTA")
+    print("O jogador escolheu TESOURA e o computador PEDRA")
+if jogador == 2 and computador == 1:
+    print("VITORIA")
+    print("O jogador escolheu TESOURA e o computador PAPEL")
