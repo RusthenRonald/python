@@ -1,10 +1,14 @@
-tot_m=0
-for c in range(0,5):
+tot_m=media=soma_idade=tot_p=0
+for c in range(1,5):
     print(f"{c+1}° Pessoa")
+    tot_p+=1
     nome=str(input("Nome:"))
     idade=int(input("Idade:"))
+    soma_idade+=idade
+    media=soma_idade/tot_p
     sexo=str(input("Sexo: (M/F)")).strip().upper()
     if sexo in ["FEMININO","F"] and idade<20:
         tot_m+=1
     print("=-"*5)
 print(f"Tem {tot_m} mulheres com menos de 20 anos")
+print(f"A media de idade do grupo é de {media} anos")
