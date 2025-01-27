@@ -6,3 +6,4 @@ while c <=10:
     termo+=razao
     c+=1
 print("FIM")
+
