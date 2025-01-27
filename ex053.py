@@ -5,7 +5,7 @@ while opc !=5:
     print("""
     [1] somar
     [2] multiplicar
-    [3] maior
+    [3] maior 
     [4] novos números
     [5] sair do programa""")
     opc=int(input("Selecione a opção:"))
