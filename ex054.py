@@ -6,4 +6,5 @@ while c>=1:
     print("x" if c>1 else "=",end="")
     fat*=c
     c-=1
+
 print(fat,end="")
