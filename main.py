@@ -1,4 +1,4 @@
-from exapi import FAstAPI
+from main import FAstAPI
 app=FAstAPI()
 @app.get("/")
 def read_root():
