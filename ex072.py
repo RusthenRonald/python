@@ -11,5 +11,8 @@ for c in range(0,5):
         if lista[c]<menor:
             menor=lista[c]
 print(lista)
-print(maior)
-print(menor)
+print(f"O maior valor usando logica é {maior}")
+print(f"O menor valor usando logica é {menor}")
+print("="*10)
+print(f"O maior valor usando max foi {max(lista)}")
+print(f"O maior valor usando max foi {min(lista)}")
