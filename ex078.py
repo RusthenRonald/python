@@ -7,4 +7,4 @@ for c in range(0,7):
         valores[1].append(num)
 print(f"Todos os valores foram {valores}")
 print(f"Os valores pares digitados foram {sorted(valores[0])}")
-print(f"Os valores impares digitados foram {sorted(valores[1])}")
+print(f"Os valores impares digitados foram {sorted(valores[1])}")w
