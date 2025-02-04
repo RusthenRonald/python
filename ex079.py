@@ -11,5 +11,7 @@ for l in range(0,3):
     print()
 for l in range(0,3):
     somaterc+=matriz[l][2]
+for c in range(0,3):
+    
 print(f"A soma de todos os valores pares foram {soma}")
 print(f"A soma dos valores da terceira coluna {somaterc}")
