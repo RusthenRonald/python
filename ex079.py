@@ -9,5 +9,7 @@ for l in range(0,3):
             soma+=matriz[l][c]
         print(f"[{matriz[l][c]}]",end=" ")
     print()
-
+for l in range(0,3):
+    somaterc+=matriz[l][2]
 print(f"A soma de todos os valores pares foram {soma}")
+print(f"A soma dos valores da terceira coluna {somaterc}")
