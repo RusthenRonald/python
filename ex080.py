@@ -1,7 +1,6 @@
 import random
 import time
 print("MEGA SENA")
-cont=0
 valores=[]
 jogos=int(input("Quantos jogos serão gerados?"))
 for c in range(0,jogos):
