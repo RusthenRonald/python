@@ -14,3 +14,7 @@ print(jogador)
 print("=-"*15)
 for k,v in jogador.items():
     print(f"{k} tem o valor {v}")
+print("=-"*15)
+print(f"O jogador {jogador['Nome']} jogou {jogador['Partidas']} partidas")
+for i, v in enumerate(lista_gols):
+    print(f"-Na partida {i+1}, fez {v} gols")
