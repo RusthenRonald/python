@@ -9,4 +9,8 @@ for c in range(0,jogador["Partidas"]):
     jogador["Gols"]=lista_gols
     tot_gols+=gols
     jogador["Total de gols"]=tot_gols
+print("=-"*15)
 print(jogador)
+print("=-"*15)
+for k,v in jogador.items():
+    print(f"{k} tem o valor {v}")
