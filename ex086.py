@@ -15,4 +15,4 @@ while True:
         break
 print(principal)
 print(f"Ao todo tem {len(principal)} pessoas cadastradas")
-print(f"A media total foi de {media}")
+print(f"A media total foi de {media} anos")
