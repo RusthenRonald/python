@@ -2,6 +2,7 @@ jogador={}
 gols=[]
 principal=[]
 while True:
+    gols=[]
     jogador["Nome do jogador"]=str(input("Digite o nome do jogador:"))
     partidas=int(input(f"Digite a quantidade de partidas que {jogador['Nome do jogador']} jogou:"))
     for c in range(0,partidas):
