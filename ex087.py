@@ -16,6 +16,6 @@ while True:
     if r in "Nn":
         break
 print("=-"*15)
-print(f"{"Pos":5} {"Nome":10} {"Gols":10} {"Total":10}")
-for i,v in enumerate(principal):
-    print(f"{i} {v["Nome do jogador"]} {v["Gols"]} {v["Total de gols"]}")
+print(f"{'Pos':5} {'Nome':20} {'Gols':10} {'Total':10}")
+for i, v in enumerate(principal):
+    print(f"{i+1} {v['Nome do jogador']} {v['Gols']} {v['Total de gols']}")
