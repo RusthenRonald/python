@@ -5,3 +5,14 @@ def contador (*num):
 contador(2,3)
 contador(1,5,2,8)
 contador(2)
+#Cada vez que você chama a função, os números passados são agrupados em uma tupla.
+
+def dobra(lst):
+    pos=0
+    while pos<len(lst):
+        lst[pos]*=2
+        pos+=1
+
+valores=[2,5,7,1,8]
+
+dobra(valores)
