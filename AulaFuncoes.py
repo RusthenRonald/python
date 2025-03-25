@@ -14,5 +14,13 @@ def dobra(lst):
         pos+=1
 
 valores=[2,5,7,1,8]
-
+print(valores)
 dobra(valores)
+print(valores)
+
+def soma(*valores):
+    s=0
+    for n in valores:
+        s+=n
+
+soma(2,2,3)
