@@ -1,5 +1,6 @@
 def soma(a,b):
+    print(f'A = {a} e B = {b}')
     soma=a+b
     print(soma)
 
-soma(2,2)
+soma(b=4,a=5)
