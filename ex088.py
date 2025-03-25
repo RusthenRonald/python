@@ -1,12 +1,8 @@
-def lin():
+def mensagem(msg):
+    print("-"*30)
+    print(msg)
     print("-"*30)
 
-lin()
-print("Curso em Video")
-lin()
-lin()
-print("Aprenda Python")
-lin()
-lin()
-print("Rusthen Ronald")
-lin()
+mensagem('Curso em Video')
+mensagem('Aprenda Python')
+mensagem('Gustavo Guanabara')
